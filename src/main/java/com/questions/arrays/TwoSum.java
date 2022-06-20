@@ -1,6 +1,5 @@
 package com.questions.arrays;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -30,7 +29,7 @@ public class TwoSum {
         return new int[0];
     }
 
-    public static int[] usingTwoPointer(int[] array, int targetSum) {
+    public static int[] usingTwoPointer(int[] array, int targetSum) { // time: O(nlogn); space: O(1)
         Arrays.sort(array);
         int left = 0;
         int right = array.length - 1;
